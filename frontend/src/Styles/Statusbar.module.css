@@ -1,0 +1,32 @@
+@import './colourScheme.css';
+
+.heading {
+    font-size: 2vw;
+    animation: fadeIn ease 1s;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    padding: 1em 0 1em 0;
+    transition: all 3s;
+}
+
+.day {
+    background-color: var(--dayBG);
+    color: black;
+}
+
+.night {
+    background-color: var(--nightBG);
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

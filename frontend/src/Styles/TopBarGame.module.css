@@ -1,0 +1,47 @@
+@import './colourScheme.css';
+
+.userName {
+    grid-area: userName;
+    justify-self: start;
+}
+
+.userRole {
+    grid-area: userRole;
+    justify-self: start;
+    text-transform: capitalize;
+}
+
+.info {
+    grid-area: info;
+    justify-self: start;
+}
+
+.timer {
+    grid-area: Timer;
+    justify-self: center;
+}
+
+.settingsButton {
+    grid-area: Settings;
+    justify-self: end;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'userName Timer Settings'
+        'userRole Timer Settings';
+    align-items: center;
+    justify-items: start;
+    background-color: var(--darkBlue);
+    color: var(--lightBlue);
+    padding: 0.5em 2em 0.5em;
+}
+
+.container p,
+span {
+    margin: 0;
+    font-size: calc(10px + 1vmin);
+}

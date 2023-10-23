@@ -1,0 +1,100 @@
+@import './colourScheme.css';
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+.pageContainer {
+    align-items: center;
+    background-color: #a4b8c4 !important;
+    max-height: 700px;
+    overflow: auto !important;
+}
+
+.roleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.charaImg {
+    float: left;
+    width: 30%;
+    padding-top: 12%;
+}
+
+.roleContainer h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: 'Audiowide';
+}
+
+.spanTitle {
+    font-weight: bold;
+    font-size: 12px;
+}
+.spanContent {
+    font-size: 12px;
+    width: 80%;
+}
+
+.detail {
+    width: 60%;
+    float: right;
+}
+
+.dayRuleContainer {
+    vertical-align: middle;
+    margin: 0.5em auto 0.5em auto;
+    background-color: var(--lightGrey) !important;
+    padding: 0.5em;
+    width: 80%;
+    text-align: justify;
+    white-space: pre-line;
+    overflow: auto;
+    display: flex;
+}
+.nightRuleContainer {
+    vertical-align: middle;
+    margin: 0 auto 1em auto;
+    background-color: var(--gunmetal) !important;
+    color: white !important;
+    padding: 0.5em;
+    width: 80%;
+    text-align: justify;
+    white-space: pre-line;
+    overflow: auto;
+    display: flex;
+}
+
+.ruleImg {
+    float: left;
+    width: 8%;
+    left: 1%;
+}
+
+.ruleDetail {
+    float: right;
+    width: 90%;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.roleInfo {
+    margin: 10px;
+    position: relative;
+}
+
+.roleHighlight {
+    background-color: black;
+    color: black;
+    margin: 0;
+    padding: 0.5em;
+    border-radius: 10px 10px 0 0;
+    font-weight: 500;
+}
+
+.roleTag {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -40px;
+}

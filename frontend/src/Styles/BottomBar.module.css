@@ -1,0 +1,16 @@
+@import './colourScheme.css';
+
+.container {
+    padding: 1em 1em 1em 3em;
+    transition: all 3s;
+}
+
+.day {
+    background-color: var(--dayBG);
+    color: black;
+}
+
+.night {
+    background-color: var(--nightBG);
+    color: white;
+}

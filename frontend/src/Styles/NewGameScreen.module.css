@@ -1,0 +1,59 @@
+@import './colourScheme.css';
+
+.newGameScreen {
+    background-color: var(--gunmetal);
+    height: 99%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.bodyContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    column-gap: 2em;
+}
+
+.leftContainer {
+    display: grid;
+    row-gap: 2em;
+    height: 80vh;
+    grid-template-rows: 1fr 1fr;
+}
+
+.rightContainer {
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 85% 1fr;
+    row-gap: 2em;
+}
+
+.playerNames {
+    grid-row: 1;
+    grid-row-end: 2;
+}
+
+.chatbox {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.lobbySettings {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.Modal {
+    background-color: var(--darkBlue);
+    border: 2px solid #e3f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    min-width: 60vh;
+    width: 70%;
+}

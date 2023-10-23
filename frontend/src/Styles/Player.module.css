@@ -1,0 +1,63 @@
+@import './colourScheme.css';
+
+
+.playerImg {
+    height: 7vw;
+    width: 7vw;
+    margin: 10px 10px 0px 10px;
+    font-size: 1.5rem;
+}
+
+.hatImg {
+    height: 4vw;
+    width: 4vw;
+    /* position: relative; */
+    margin: -150% 25% 150% 25%;
+    /* padding-bottom: 0vw; */
+    font-size: 1.5rem;
+}
+
+.isHoverable:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hasVoted:after {
+    content: 'I VOTED!';
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    vertical-align: 50%;
+    margin-left: 10px;
+    color: black;
+    border-radius: 4px;
+    width: 90px;
+    height: 25px;
+    position: absolute;
+    top: -15px;
+    background-color: var(--lightGreen);    
+    border-color: rgb(146, 168, 136);
+    border-style: solid;  
+    border-width: 1px;
+}
+
+.isClicked {
+    background-color: var(--lightCoral);
+    color: var(--lightBlue);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.isClicked:hover {
+    background-color: #f75252;
+}
+
+.isDead {
+    color: #f75252;
+}
+
+.playerText {
+    text-align: center;
+}
+.playerText p {
+    margin: 2px;
+}

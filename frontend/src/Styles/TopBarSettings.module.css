@@ -1,0 +1,35 @@
+@import './colourScheme.css';
+
+.backButton {
+    grid-area: BackButton;
+    justify-self: start;
+}
+
+.rolesAndRules {
+    color: white !important;
+}
+
+.header {
+    grid-area: Header;
+    justify-self: center;
+    color: white;
+}
+
+.settingsButton {
+    grid-area: Settings;
+    justify-self: end;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'BackButton Header Settings';
+    align-items: center;
+    width: 100%;
+}
+
+.container p {
+    margin: 0;
+    font-size: calc(10px + 1vmin);
+}
